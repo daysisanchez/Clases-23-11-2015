@@ -1,0 +1,105 @@
+1.-Crear una clase Circulo con el atributo Radio, y el metodo GetArea().Crear dos constructores, el primero sin argumentos, y el segundo co el parametro de entrada Radio.
+
+
+package poo1;
+
+public class Circulo {
+        private double Radio;
+       
+        public Circulo(){
+       
+        }
+           public void setRadio(double RadioParam){
+        		this.Radio = RadioParam;
+        	}
+        	public double getRadio(){
+        		return this.Radio;
+        	}
+        	public Circulo (double RadioParam){
+        		this.Radio = RadioParam;
+        }
+        	public double getArea(){
+        		return Math.PI * Radio * Radio;
+        	}   
+       
+    }
+    
+    package poo1;
+
+public class Ejercicio1 {
+
+	public static void main(String[] args) {
+		Circulo cir1= new Circulo(10);
+		cir1.setRadio(10);
+		double result = cir1.getRadio();
+		System.out.println("Area cir1:" + cir1.getArea ());
+
+	}
+
+}
+
+    
+   
+   2.- Crar una clase Descuento con todos los atributos porcentajes de descuento y el total  de compra, crear un constructor que reciba dos parametros de entrada descuento y total, y un metodo GetTotal que retorne el total de compra.
+   
+   package poo2;
+
+public class Descuento {
+       private double Descuento;
+       private double TotalCompra;
+       
+       public Descuento (double DescuentoParam, double TotalCompraParam){
+    	   this.Descuento = DescuentoParam;
+    	   this.TotalCompra = TotalCompraParam;
+       }
+       public double getDescuento(){
+    	   return Descuento;
+       }
+       public void setDescuento(double Descuento){
+    	   this.Descuento = Descuento;
+       }
+       public double getTotalCompra(){
+    	   return TotalCompra;
+       }
+       public void steTotalCompra (double TotalCompra){
+    	   
+       }
+	
+	}package poo2;
+
+public class Descuento {
+       private double Descuento;
+       private double TotalCompra;
+       
+       public Descuento (double DescuentoParam, double TotalCompraParam){
+    	   this.Descuento = DescuentoParam;
+    	   this.TotalCompra = TotalCompraParam;
+       }
+       public double getDescuento(){
+    	   return Descuento;
+       }
+       public void setDescuento(double Descuento){
+    	   this.Descuento = Descuento;
+       }
+       public double getTotalCompra(){
+    	   return TotalCompra;
+       }
+       public void steTotalCompra (double TotalCompra){
+    	   
+       }
+	
+	}
+	
+	
+	
+	
+	ackage poo2;
+
+public class Ejercicio2 {
+
+	public static void main(String[] args) {
+		Descuento des1 = new Descuento (0.10 , 100);
+        System.out.println("TotalCompra:" + des1.getTotalCompra());
+   }
+}
+   
